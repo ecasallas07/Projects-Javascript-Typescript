@@ -5,7 +5,7 @@ const server = http.createServer((req,res)=>{
 
     try{
         res.writeHead(200,{'Content-Type':'text/html'})
-        res.end('Hola mundo\n')
+        res.end('Hola mundo\n',req)
     }catch(error)
     {
         res.writeHead(200,{'Content-Type':'text/html'})
