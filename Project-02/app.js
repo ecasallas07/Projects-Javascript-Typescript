@@ -14,8 +14,8 @@ app.get('/',function(req,res){
 
 app.post('/create', (req,res) =>{
     const nuevaTarea = req.body;
-    tareas.push(nuevaTarea)
-    res.json({mensaje:'Tarea nueva',tarea:nuevaTarea})
+    tareas.push(nuevaTarea);
+    res.json({mensaje:'Tarea nueva',tarea:nuevaTarea});
 });
 
 app.listen(port,()=>{
